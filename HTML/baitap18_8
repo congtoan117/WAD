@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<body style="background-color:powderblue;">
+<body>
 
-<h1>pham cong toan</h1>
-<p>2121051164.</p>
+<h1 style="color:blue;">pham cong toan</h1>
+<p style="color:red;">2121051164</p>
 
 </body>
 </html>
