@@ -2,17 +2,10 @@
 <html>
 <body>
 
-<p>pham cong toan </p>
-
-<pre>
-   My Bonnie lies over the ocean.
-
-   My Bonnie lies over the sea.
-
-   My Bonnie lies over the ocean.
-   
-   Oh, bring back my Bonnie to me.
-</pre>
+<p>pham con toan</p>
+<p style="color:red;">I am red</p>
+<p style="color:blue;">I am blue</p>
+<p style="font-size:50px;">I am big</p>
 
 </body>
 </html>
