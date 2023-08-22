@@ -2,9 +2,24 @@
 <html>
 <body>
 
-<p>pham cong toan.</p>
-<p>2121051164.</p>
-<p>This is a paragraph.</p>
+<p>
+pham con toan
+contains a lot of lines
+in the source code,
+but the browser 
+ignores it.
+</p>
+
+<p>2121051164
+contains      a lot of spaces
+in the source     code,
+but the    browser 
+ignores it.
+</p>
+
+<p>
+The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
+</p>
 
 </body>
 </html>
