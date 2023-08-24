@@ -1,21 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-#myHeader {
-  background-color: lightblue;
-  color: black;
-  padding: 40px;
-  text-align: center;
-} 
-</style>
-</head>
 <body>
 
 <h2>pham cong toan</h2>
-<p>pham cong toan:</p>
+<p>You can also use the CSS height and width properties to specify the size of the iframe:</p>
 
-<h1 id="myHeader">pham cong toan</h1>
+<iframe src="demo_iframe.htm" style="height:200px;width:300px" title="Iframe Example"></iframe>
 
 </body>
 </html>
