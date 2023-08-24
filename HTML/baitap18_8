@@ -3,17 +3,15 @@
 <body>
 
 <h2>pham cong toan</h2>
-<img src="../images/picture.jpg" alt="Mountain" style="width:300px">
+<p>Some programming code:</p>
+
+<code>
+x = 5;
+y = 6;
+z = x + y;
+</code>
 
 </body>
 </html>
-<!DOCTYPE html>
-<html>
-<body>
 
-<h2>pham cong toan</h2>
-<img src="images/picture.jpg" alt="Mountain" style="width:300px">
-
-</body>
-</html>
 
