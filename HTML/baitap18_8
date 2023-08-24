@@ -5,8 +5,8 @@
 body {
   background-image: url('img_girl.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
 }
 </style>
 </head>
@@ -14,7 +14,7 @@ body {
 
 <h2>pham cong toan</h2>
 
-<p>2121051164.</p>
+<p>Set the background-size property to "100% 100%" and the background image will be stretched to cover the entire element, in this case the body element.</p>
 
 </body>
 </html>
