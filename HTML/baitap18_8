@@ -4,17 +4,16 @@
 <style>
 table, th, td {
   border: 1px solid black;
-  border-collapse: collapse;
 }
-th, td {
-  padding: 15px;
+table {
+  border-spacing: 30px;
 }
 </style>
 </head>
 <body>
 
 <h2>pham cong toan</h2>
-<p>Cell padding specifies the space between the cell content and its borders.</p>
+<p>Change the space between the cells with the border-spacing property.</p>
 
 <table style="width:100%">
   <tr>
@@ -39,7 +38,6 @@ th, td {
   </tr>
 </table>
 
-<p><strong>Tip:</strong> Try to change the padding to 5px.</p>
-
 </body>
 </html>
+
