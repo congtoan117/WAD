@@ -4,15 +4,13 @@
 
 <h2>pham cong toan</h2>
 
-<p>The <strong>input type="datetime-local"</strong> specifies a date and time input field, with no time zone.</p>
+<p>The <strong>input type="email"</strong> is used for input fields that should contain an e-mail address:</p>
 
 <form action="/action_page.php">
-  <label for="birthdaytime">Birthday (date and time):</label>
-  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
   <input type="submit" value="Submit">
 </form>
-
-<p><strong>Note:</strong> type="datetime-local" is not supported in Internet Explorer 11 or prior Safari 14.1.</p>
 
 </body>
 </html>
