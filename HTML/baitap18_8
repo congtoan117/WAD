@@ -4,19 +4,15 @@
 
 <h2>pham cong toan</h2>
 
-<p>Use the min and max attributes to add restrictions to dates:</p>
+<p>The <strong>input type="datetime-local"</strong> specifies a date and time input field, with no time zone.</p>
 
 <form action="/action_page.php">
-  <label for="datemin">Enter a date after 2000-01-01:</label>
-  <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
-
-  <label for="datemax">Enter a date before 1980-01-01:</label>
-  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
-  
+  <label for="birthdaytime">Birthday (date and time):</label>
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
   <input type="submit" value="Submit">
 </form>
 
-<p><strong>Note:</strong> type="date" is not supported in Internet Explorer 11 or prior Safari 14.1.</p>
+<p><strong>Note:</strong> type="datetime-local" is not supported in Internet Explorer 11 or prior Safari 14.1.</p>
 
 </body>
 </html>
