@@ -2,23 +2,22 @@
 <html>
 <body>
 
-<h2>The datalist Element</h2>
+<h2>pham cong toan</h2>
+<p>The output element represents the result of a calculation.</p>
 
-<p>The datalist element specifies a list of pre-defined options for an input element.</p>
-
-<form action="/action_page.php">
-  <input list="browsers" name="browser">
-  <datalist id="browsers">
-    <option value="Internet Explorer">
-    <option value="Firefox">
-    <option value="Chrome">
-    <option value="Opera">
-    <option value="Safari">
-  </datalist>
+<form action="/action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
   <input type="submit">
 </form>
 
-<p><b>Note:</b> The datalist tag is not supported in Safari prior version 12.1.</p>
+<p><strong>Note:</strong> The output element is not supported in Edge prior version 13.</p>
 
 </body>
 </html>
