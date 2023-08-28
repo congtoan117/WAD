@@ -4,17 +4,13 @@
 
 <h1>pham cong toan</h1>
 
-<p>The <strong>input type="time"</strong> allows the user to select a time (no time zone):</p>
-
-<p>If the browser supports it, a time picker pops up when entering the input field.</p>
+<p>The <strong>input type="url"</strong> is used for input fields that should contain a URL address:</p>
 
 <form action="/action_page.php">
-  <label for="appt">Select a time:</label>
-  <input type="time" id="appt" name="appt">
+  <label for="homepage">Add your homepage:</label>
+  <input type="url" id="homepage" name="homepage">
   <input type="submit" value="Submit">
 </form>
-
-<p><strong>Note:</strong> type="time" is not supported in Internet Explorer 11 or prior Safari 14.1.</p>
 
 </body>
 </html>
