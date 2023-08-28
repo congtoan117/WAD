@@ -4,15 +4,15 @@
 
 <h2>pham cong toan</h2>
 
-<p>The <strong>input type="month"</strong> allows the user to select a month and year.</p>
+<p>The <strong>input type="number"</strong> defines a numeric input field.</p>
+
+<p>You can use the min and max attributes to add numeric restrictions in the input field:</p>
 
 <form action="/action_page.php">
-  <label for="bdaymonth">Birthday (month and year):</label>
-  <input type="month" id="bdaymonth" name="bdaymonth">
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
   <input type="submit" value="Submit">
 </form>
-
-<p><strong>Note:</strong> type="month" is not supported in Firefox, Safari, or Internet Explorer 11.</p>
 
 </body>
 </html>
