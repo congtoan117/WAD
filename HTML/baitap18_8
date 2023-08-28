@@ -3,21 +3,18 @@
 <body>
 
 <h2>pham cong toan</h2>
-<p>The output element represents the result of a calculation.</p>
+<p>The <strong>input type="text"</strong> defines a one-line text input field:</p>
 
-<form action="/action_page.php"
-oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-  0
-  <input type="range" id="a" name="a" value="50">
-  100 +
-  <input type="number" id="b" name="b" value="50">
-  =
-  <output name="x" for="a b"></output>
-  <br><br>
-  <input type="submit">
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
 </form>
 
-<p><strong>Note:</strong> The output element is not supported in Edge prior version 13.</p>
+<p>Note that the form itself is not visible.</p>
+<p>Also note that the default width of a text field is 20 characters.</p>
 
 </body>
 </html>
