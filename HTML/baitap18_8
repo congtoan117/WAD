@@ -4,7 +4,7 @@
 
 <h2>pham cong toan</h2>
 
-<p>The <strong>input type="submit"</strong> defines a button for submitting form data to a form-handler:</p>
+<p>The <strong>input type="reset"</strong> defines a reset button that resets all form values to their default values:</p>
 
 <form action="/action_page.php">
   <label for="fname">First name:</label><br>
@@ -12,9 +12,10 @@
   <label for="lname">Last name:</label><br>
   <input type="text" id="lname" name="lname" value="Doe"><br><br>
   <input type="submit" value="Submit">
+  <input type="reset">
 </form> 
 
-<p>If you click "Submit", the form-data will be sent to a page called "/action_page.php".</p>
+<p>If you change the input values and then click the "Reset" button, the form-data will be reset to the default values.</p>
 
 </body>
 </html>
