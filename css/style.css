@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-p {
-  text-align: center;
-  color: red;
-} 
-</style>
-</head>
-<body>
 
-<p>pham công toànstyle.</p>
-<p id="para1">Me too!</p>
-<p>And me!</p>
-
-</body>
-</html>
-
-
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: navy;
+    margin-left: 20px;
+  }
