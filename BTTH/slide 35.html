@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+    select {
+        width: 100%;
+        padding: 16px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #f1f1f1;
+      }
+<form class="class1">
+<div>
+    <label>Nhập số a:</label>
+  <input type="number" name="số a" id="a" required/>
+</div>
+ <div>
+  <label>Nhập số b:</label>
+  <input type="number" name="số b" id="b" required />
+ </div>
+ <p>Tổng 2 số a và b là </p>
+  <input type="submit" value="Submit">
+</form> 
+
+
+</body>
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        document.querySelector('.class1').onsubmit=tinhtong;
+    });
+
+function tinhtong(){
+   
+        const a = parseInt(document.querySelector('#a').value);
+        const b = parseInt(document.querySelector('#b').value);
+        var tong = a + b;
+        alert('Tổng hai số là:' + tong + ' ');
+    }
+</script>
