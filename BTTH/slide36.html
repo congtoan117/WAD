@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="check.js">
+  </head>
+  <body>
+    <form >
+      <div id="row">
+        <label id="lab" for="nhap1">HỌ TÊN</label>
+        <input type="text"required />
+      </div>
+      <div id="row">
+        <label id="lab" for="nhap1">TÊN ĐĂNG NHẬP</label>
+        <input id="tendangnhap" type="text" required/>
+      </div>
+      <div id="row">
+        <label id="lab" for="nhap1">PASSWORD</label>
+        <input id="password" type="text"required />
+      </div>
+      <div id="row">
+        <label id="lab" for="nhap1">REPASSWORD</label>
+        <input id="repassword" type="text"required />
+      </div>
+      <div id="row">
+        <label id="lab" for="nhap1">QUỐC TỊCH</label>
+        <select name="" id="">
+          <option value="">Vietnamese</option>
+          <option value="">US</option>
+          <option value="">UK</option>
+          <option value="">japan</option>
+        </select>
+      </div>
+      <div id="row">
+        <label id="lab" for="nhap1">EMAIL</label>
+        <input id="email" type="text" required/>
+      </div>
+      <div id="row">
+        <label id="lab" for="nhap1">PHONE NUMBER</label>
+        <input type="number"required />
+      </div>
+      <div id="row">
+        <label id="lab" id="lab" for="nhap1">SECRET QUESTION</label>
+        <select name="" id="">
+          <option value="">What is your name?</option>
+          <option value="">how are you?</option>
+          <option value="">where are you from?</option>
+          <option value="">what is mother name?</option>
+        </select>
+      </div>
+      <div id="row">
+        <label id="lab" for="nhap1">ANSWER</label>
+        <input type="text" required/>
+      </div>
+      <div id="row">
+        <button class="button" onclick="validateForm()">Kiểm tra</button>
+        <button class="button" onclick="">Đăng ký</button>
+      </div>
+    </form>
+    <script>
+      function validateForm() {
+        // Lấy giá trị từ các trường input
+        var password = document.getElementById("password").value;
+        var repassword = document.getElementById("repassword").value;
+        var email = document.getElementById("email").value;
+        var tendangnhap = document.getElementById("tendangnhap").value;
+
+
+        // Kiểm tra điều kiện
+        if(tendangnhap.length < 8){
+          alert("Tên đăng nhập phải có ít nhất 8 ký tự");
+          return;
+        }
+        if (password.length < 8) {
+          alert("Password phải có ít nhất 8 ký tự.");
+          return ;
+        }
+
+        if (password !== repassword) {
+          alert("Password và Repassword phải trùng khớp.");
+          return ;
+        }
+
+        if (email.indexOf("@") === -1) {
+          alert("Email phải chứa ký tự '@'.");
+          return ;
+        }
+
+        // Nếu tất cả điều kiện đều thỏa mãn, bạn có thể thực hiện hành động khác ở đây
+        // Ví dụ: Gửi biểu mẫu lên máy chủ
+        alert("Thông tin hợp lệ!");
+        return true;
+      }
+    </script>
+    <!-- <script src="check.js"></script> -->
+  </body>
+</html>
