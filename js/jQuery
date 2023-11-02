@@ -4,20 +4,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("button").click(function(){
-    $("#test").hide();
+  $("p").click(function(){
+    $(this).hide();
   });
 });
 </script>
 </head>
 <body>
 
-<h2>Pham Cong Toan</h2>
-
-<p>This is a paragraph.</p>
-<p id="test">This is another paragraph.</p>
-
-<button>Click me</button>
+<p>Pham Cong Toan</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
 
 </body>
 </html>
