@@ -5,7 +5,7 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $("p").hide();
+    $("#test").hide();
   });
 });
 </script>
@@ -15,9 +15,9 @@ $(document).ready(function(){
 <h2>Pham Cong Toan</h2>
 
 <p>This is a paragraph.</p>
-<p>This is another paragraph.</p>
+<p id="test">This is another paragraph.</p>
 
-<button>Click me to hide paragraphs</button>
+<button>Click me</button>
 
 </body>
 </html>
