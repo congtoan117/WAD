@@ -17,7 +17,7 @@ $(document).ready(function(){
 <p>This is a paragraph.</p>
 <p>This is another paragraph.</p>
 
-<button>Click me</button>
+<button>Click me to hide paragraphs</button>
 
 </body>
 </html>
