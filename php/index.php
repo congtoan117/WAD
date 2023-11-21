@@ -1,25 +1,45 @@
-<?php
-// phương thức Get
-if ($_SERVER["REQUEST_METHOD"] == "GET") {
-    if(isset($_GET["hoTen"]) && isset($_GET["PW"]) && isset($_GET["email"]) && isset($_GET["Sdt"])){
-        $hoTen = $_GET["hoTen"];
-        $PW = $_GET['PW'];
-        $email = $_GET['email'];
-        $Sdt = $_GET['Sdt'];
-        echo "Xin chào " . $hoTen . ", bạn vừa nhập mật khẩu là " . $PW . ", email: " . $email . " và số điện thoại: " . $Sdt . " (phương thức GET)";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="index.php">
+        <h1>Hối đoán tiền tệ:</h1><br>
+        <label for="money">Số tiền muốn đổi:</label><br>
+        <input type="text" name="money" required><br>
+        <select name="type">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="SGD">SGD</option>
+            <option value="JPY">JPY</option>
+        </select>
+        <br>
+        <input type="submit" value="Chuyển đổi" >
+    </form>
+    <?php
+    if(isset($_POST['money'])&& isset($_POST['type'])){
+        $type=$_POST['type'];
+        $first=(float)$_POST['money'];
+
+        $usd=23000;
+        $jpy=200;
+        $eur=27000;
+        $sgd=10000;
+        switch($type){
+            case 'USD': echo $usd *$first;
+            break;
+            case 'EUR': echo $first * $eur;
+            break;
+            case 'SGD': echo $first * $sgd;
+            break;
+            case 'JPY': echo $first * $jpy;
+
+        }
+
     }
-}
-
-// phương thức post
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if(isset($_POST["hoTen"]) && isset($_POST["PW"]) && isset($_POST["email"]) && isset($_POST["Sdt"])){
-        $hoTen = $_POST["hoTen"];
-        $PW = $_POST['PW'];
-        $email = $_POST['email'];
-        $Sdt = $_POST['Sdt'];
-        echo "Xin chào " . $hoTen . ", bạn vừa nhập mật khẩu là " . $PW . ", email: " . $email . " và số điện thoại: " . $Sdt . " (phương thức POST)";
-    }
-}
-
-
-?>
+    ?>
+</body>
+</html>
