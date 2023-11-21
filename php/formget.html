@@ -6,15 +6,15 @@
     </head>
     <body>
         <?php
-            echo "THE GAME ";
-            if ($_GET["response"] == "yes")
-            {
-                echo "HAS BEEN QUITED";
-            }
-            else {
-                echo "WILL BE COUNTINUED IN 3 SECOND";
-            }
-            echo "<br>AFTER IF STATEMENT";
+   $tongdiem = $_GET["toan"] + $_GET["ly"] + $_GET["hoa"];
+   if($tongdiem<17) echo"diem cua ban khong du dau cac nganh ";
+   else
+   echo "diem cua ban lon hơn diem chuan cac nganh sau :<br> ";
+   if($tongdiem>=15) echo "Moi truong<br> ";
+   if($tongdiem>=17) echo "Dia chat<br> ";
+   if($tongdiem>=18) echo "CNTT<br> KHDL <br>";
+   if($tongdiem>=22) echo "CNTT chat luong cao<br>";
+
         ?>
     </body>
 </html>
