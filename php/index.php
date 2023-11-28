@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hà Mạnh Kiên</title>
+    <title>Phạm Công Toàn</title>
+    <title>Document</title>
 </head>
 <body>
     <h1>Kiểm tra điểm</h1></h1>
@@ -48,6 +47,9 @@ if(isset($_POST['name']) && isset($_POST['toan']) && isset($_POST['ly']) && isse
             $flag = false;
             echo 'Chào bạn:' . $name . ", bạn là học sinh yếu vì bạn đẫ nhập quá điểm 1 môn.vui lòng keiemr tra lại";
             break;
+    $temps =array ('D:\PHP\htdocs\mkien\image\team-1.jpg','D:\PHP\htdocs\mkien\image\team-2.jpg','D:\PHP\htdocs\mkien\image\team-3.jpg','D:\PHP\htdocs\mkien\image\team-4.jpg');
+    foreach ($temps as $key) {
+        echo"<img src='images/$key' width='100px' height='100px' alt='$key'>";
     }
 
     if($flag){
